@@ -177,7 +177,7 @@ with tab_about:
         m1, m2, m3, m4 = st.columns(4)
         m1.metric("Projects", len(projects_df))
         m2.metric("Technologies", len(skills_df))
-        m3.metric("Hackathons", 1, delta="+1 this year")  # EDIT
+        m3.metric("Hackathons", 2, delta="+1 this year")  # EDIT
         m4.metric("Top skill", skills_df.loc[skills_df.Level.idxmax(), "Skill"].split(" /")[0])
 
         st.markdown("**Interests**")
